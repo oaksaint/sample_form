@@ -1,2 +1,2 @@
 # sample_form
-A Sample form using HTML/CSS/Javascript, done as part of The Odin Project curriculum
+A sample form using HTML/CSS/Javascript, done as part of The Odin Project curriculum.
