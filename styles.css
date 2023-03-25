@@ -1,0 +1,14 @@
+body {
+  background-image: url(/images/wallpaper.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+}
+
+#central-div {
+  width: 70vw;
+  height: 100vh;
+  background-color: white;
+}
