@@ -1,5 +1,6 @@
 body {
-  background-color: lightblue;
+  background-image: url(/images/wallpaper.jpg);
+  background-size: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
@@ -18,7 +19,7 @@ body {
 #logo-container-sub {
   width: 30vw;
   height: 40vh;
-  background-color: rgba(105, 105, 105, 0.3);
+  background-color: rgba(105, 105, 105, 0.5);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -48,13 +49,12 @@ body {
 
 .regular-text {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .signup-text {
   margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: -10%;
+  margin-right: 40%;
 }
 
 .start-text {
@@ -71,22 +71,30 @@ body {
   flex-direction: column;
 }
 
-#form-container-sub {
-  height: 20vh;
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form-row {
-  display: flex;
+#submit-btn {
   margin-left: 5%;
   margin-right: 5%;
-  text-align: right;
+  background-color: rgb(105, 105, 105);
+  color: white;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 6rem;
+  border: none;
+  border-radius: 15px;
 }
 
-.form-item {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+#submit-btn:hover {
+  background-color: rgba(105, 105, 105, 0.5);
+  cursor: pointer;
+}
+
+#submit-btn:active {
+  background-color: #3b7399;
+  position: relative;
+  top: 3px;
+}
+
+a {
+  color: #3b7399;
+  text-decoration: none;
 }
