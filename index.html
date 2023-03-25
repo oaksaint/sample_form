@@ -19,42 +19,25 @@
         Sign up now for your <strong>free</strong> (actually non-existent) account! Please fill in your new account information below:
       </p>
       <div id="form-container">
-        <p class="regular-text">Let's get started!</p>
+        <p class="regular-text start-text">Let's get started!</p>
         <div id="form-container-sub">
-          <form action="" method="post">
-            <div class="form-row">
-              <span class="form-item fname">
-                <label for="first-name">First name:</label>
-                <input type="text" name="first-name" id="first-name" minlength="3" maxlength="20" required />
-              </span>
-              <span class="form-item lname">
-                <label for="last-name">Last name:</label>
-                <input type="text" name="last-name" id="last-name" minlength="3" maxlength="20" required />
-              </span>
-            </div>
-            <div class="form-row">
-              <span class="form-item e-mail">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required />
-              </span>
-              <span class="form-item phone-number">
-                <label for="telephone">Last name:</label>
-                <input type="tel" name="telephone" id="telephone" required />
-              </span>
-            </div>
-            <div class="form-row">
-              <span class="form-item pwd">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required />
-              </span>
-              <span class="form-item confirm">
-                <label for="pwd-confirm">Last name:</label>
-                <input type="password" name="pwd-confirm" id="pwd-confirm" required />
-              </span>
-            </div>
+          <form id="main-form" action="" method="post">
+            <label for="first-name">FIRST NAME:</label>
+            <input type="text" name="first-name" id="first-name" minlength="3" maxlength="20" required />
+            <label for="last-name">LAST NAME:</label>
+            <input type="text" name="last-name" id="last-name" minlength="3" maxlength="20" required />
+            <label for="email">EMAIL:</label>
+            <input type="email" name="email" id="email" required />
+            <label for="telephone">PHONE NUMBER:</label>
+            <input type="tel" name="telephone" id="telephone" required />
+            <label for="password">PASSWORD:</label>
+            <input type="password" name="password" id="password" required />
+            <label for="pwd-confirm">CONFIRM PASSWORD:</label>
+            <input type="password" name="pwd-confirm" id="pwd-confirm" required />
           </form>
         </div>
       </div>
+      <button type="submit" form="main-form">Create account</button>
     </div>
   </body>
 </html>
