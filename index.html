@@ -21,9 +21,37 @@
       <p class="regular-text signup-text">
         Sign up now for your <strong>free</strong> (actually non-existent) account! Please fill in your new account information below:
       </p>
-      <div id="form-container">
-        <p class="regular-text start-text">Let's get started!</p>
-      </div>
+      <form action="" method="POST" id="main-form">
+        <div id="form-container">
+          <p class="regular-text start-text">Let's get started!</p>
+          <div class="grid-container">
+            <div class="grid-element">
+              <label for="first-name">FIRST NAME - only letters are accepted:</label>
+              <p><input type="text" id="first-name" name="first-name" required minlength="2" maxlength="25" pattern="[A-Za-z]{1,25}" /></p>
+            </div>
+            <div class="grid-element">
+              <label for="last-name">LAST NAME - only letters are accepted:</label>
+              <p><input type="text" id="last-name" name="last-name" required minlength="3" maxlength="25" pattern="[A-Za-z]{3,25}" /></p>
+            </div>
+            <div class="grid-element">
+              <label for="email">EMAIL ADDRESS:</label>
+              <p><input type="email" id="email" name="email" required /></p>
+            </div>
+            <div class="grid-element">
+              <label for="phone">PHONE NUMBER - format: +xx(xx)xxxx-xxxx:</label>
+              <p><input type="tel" id="phone" name="phone" required pattern="(\+?\d{1,3}[- ]?)?\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}" /></p>
+            </div>
+            <div class="grid-element">
+              <label for="password">PASSWORD - minimum 8 and maximum 20 characters:</label>
+              <p><input type="password" id="password" name="password" required minlength="8" maxlength="20" /></p>
+            </div>
+            <div class="grid-element">
+              <label for="confirm">CONFIRM PASSWORD:</label>
+              <p><input type="password" id="confirm" name="confirm" required minlength="8" maxlength="20" /></p>
+            </div>
+          </div>
+        </div>
+      </form>
       <button type="submit" form="main-form" id="submit-btn">Create account</button>
       <p class="regular-text start-text">Already have an account? <a href="https://www.theodinproject.com/">Log in</a></p>
     </div>

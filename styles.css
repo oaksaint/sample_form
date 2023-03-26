@@ -61,15 +61,26 @@ body {
 .start-text {
   margin-left: 5%;
   margin-right: 5%;
+  height: 4vh;
+  width: 100%;
+  display: block;
 }
 
 #form-container {
   height: 50vh;
   width: 70vw;
   background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  position: relative;
+}
+
+.grid-element {
+  margin-left: 10%;
 }
 
 #submit-btn {
